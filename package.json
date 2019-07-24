@@ -1,0 +1,15 @@
+{
+    "name": "ubicateserver",
+    "description": "Servidor de Ubicata APP",
+    "version": "0.0.1",
+    "author": "Victor Hugo Erazo Grijalba",
+    "scripts": {
+        "start": "nodemon server.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "mongoose": "^5.6.6",
+        "swig": "^1.4.2"
+    },
+    "devDependencies": {}
+}

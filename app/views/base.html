@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>{{nameProyect}}</title>
+</head>
+<body>
+    {% block contenido %} 
+    
+    <h1>Archivo de ejemplo</h1>
+    <div>
+        <span>FOR</span>
+        <ul>
+            {% for numero in numeros %}
+                <li>{{numero}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div>
+        <span>IF</span>
+        {% if numeros %}
+            {{numeros[0]}}
+        {% endif %}
+    </div>
+    <div>
+        <span>Bloke externo</span>
+        {% block content %}
+        --En medio de bloque
+        {% endblock %}
+    </div>
+
+    
+    
+    {% endblock %}    
+</body>
+</html>
+
+
